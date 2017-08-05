@@ -1,4 +1,4 @@
-// Promises callbacks ES6[2015]
+// Promises callbacks ES6[2015] --
 function getDataPromise(location){
     return new Promise(function(resolve, reject){
         var locStr = location.toString().toLowerCase();
