@@ -7,6 +7,10 @@ var Weather = require('Weather');
 var About = require('About');
 var Examples = require('Examples');
 
+// load foundation
+require('style!css!foundation-sites/dist/foundation.min.css');
+$(document).foundation();
+
 ReactDOM.render(
   <Router history={hashHistory}>
       <Route path="/" component={Main}>
@@ -19,4 +23,5 @@ ReactDOM.render(
 );
 
 
-//http://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=c4e735ea8bd7e7b6dc8368c752517b2d&units=imperial
+//http://api.openweathermap.org/data/2.5/weather?q=London,
+//uk&appid=c4e735ea8bd7e7b6dc8368c752517b2d&units=imperial

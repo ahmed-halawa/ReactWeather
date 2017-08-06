@@ -6,12 +6,11 @@ var app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(function(req, res, next){
-
-  //Heroku
+  // Heroku
   if(req.headers['x-forwarded-proto'] === 'https'){
     res.redirect('http://' + req.hostname + ':' + PORT + req.url);      
   }else{
-    next();
+    next();   //   http://localhost:3000 
   }
 })
 
